@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: var-www-html
+  namespace: neromicare
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: var-www-html
+  resources:
+    requests:
+      storage: 10Gi
