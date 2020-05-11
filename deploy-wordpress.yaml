@@ -35,7 +35,7 @@ spec:
         volumeMounts:
         - name: var-www-html
           mountPath: /var/www/
-          subPath: /html
+          subPath: html
       volumes:
       - name: var-www-html
         persistentVolumeClaim:
